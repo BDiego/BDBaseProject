@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4E5884460B78B66AA82DB8FC /* libPods-BDBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E2B7CBFE62A66B74528587 /* libPods-BDBaseProject.a */; };
+		FE35E1FC20FC5207007C0FE0 /* BDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35E1FB20FC5207007C0FE0 /* BDTextField.m */; };
+		FE35E20120FC564D007C0FE0 /* BDAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35E1FD20FC564D007C0FE0 /* BDAlertController.m */; };
+		FE35E20220FC564D007C0FE0 /* BDAlertControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35E20020FC564D007C0FE0 /* BDAlertControllerManager.m */; };
 		FE571EF320F7634000270237 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE571EF220F7634000270237 /* AppDelegate.m */; };
 		FE571EF620F7634000270237 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE571EF520F7634000270237 /* ViewController.m */; };
 		FE571EF920F7634000270237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE571EF720F7634000270237 /* Main.storyboard */; };
@@ -63,6 +66,12 @@
 		0C081C7860E35BFF1DE01DC1 /* Pods-BDBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDBaseProject/Pods-BDBaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		56E2B7CBFE62A66B74528587 /* libPods-BDBaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BDBaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8F157D1785BA6E5392C5DA /* Pods-BDBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDBaseProject/Pods-BDBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		FE35E1FA20FC5207007C0FE0 /* BDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDTextField.h; sourceTree = "<group>"; };
+		FE35E1FB20FC5207007C0FE0 /* BDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDTextField.m; sourceTree = "<group>"; };
+		FE35E1FD20FC564D007C0FE0 /* BDAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDAlertController.m; sourceTree = "<group>"; };
+		FE35E1FE20FC564D007C0FE0 /* BDAlertControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDAlertControllerManager.h; sourceTree = "<group>"; };
+		FE35E1FF20FC564D007C0FE0 /* BDAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDAlertController.h; sourceTree = "<group>"; };
+		FE35E20020FC564D007C0FE0 /* BDAlertControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDAlertControllerManager.m; sourceTree = "<group>"; };
 		FE571EEE20F7634000270237 /* BDBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE571EF120F7634000270237 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FE571EF220F7634000270237 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -355,15 +364,21 @@
 		FEE3371720F842F600597B42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE35E1FF20FC564D007C0FE0 /* BDAlertController.h */,
+				FE35E1FD20FC564D007C0FE0 /* BDAlertController.m */,
+				FE35E1FE20FC564D007C0FE0 /* BDAlertControllerManager.h */,
+				FE35E20020FC564D007C0FE0 /* BDAlertControllerManager.m */,
+				FE35E1FA20FC5207007C0FE0 /* BDTextField.h */,
+				FE35E1FB20FC5207007C0FE0 /* BDTextField.m */,
 				FEE3371820F842F600597B42 /* BDBaseCell.h */,
 				FEE3371920F842F600597B42 /* BDBaseCell.m */,
 				FEE3371A20F842F600597B42 /* BDBaseTitleView.h */,
 				FEE3371B20F842F600597B42 /* BDBaseTitleView.m */,
+				FEE3372020F842F600597B42 /* BDViewProtocol.h */,
 				FEE3371C20F842F600597B42 /* BDBaseView.h */,
 				FEE3371D20F842F600597B42 /* BDBaseView.m */,
 				FEE3371E20F842F600597B42 /* BDUserHead.h */,
 				FEE3371F20F842F600597B42 /* BDUserHead.m */,
-				FEE3372020F842F600597B42 /* BDViewProtocol.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -546,12 +561,14 @@
 				FEE3372D20F842F600597B42 /* BDTabBarVC.m in Sources */,
 				FEE3373420F842F600597B42 /* BDUtils.m in Sources */,
 				FEE3372A20F842F600597B42 /* BDBaseVC.m in Sources */,
+				FE35E20120FC564D007C0FE0 /* BDAlertController.m in Sources */,
 				FEE3373720F842F600597B42 /* BDBaseTitleView.m in Sources */,
 				FEE3373C20F84BE400597B42 /* NSString+Check.m in Sources */,
 				FEE3373620F842F600597B42 /* BDBaseCell.m in Sources */,
 				FEE3373820F842F600597B42 /* BDBaseView.m in Sources */,
 				FE571EF620F7634000270237 /* ViewController.m in Sources */,
 				FE571F0120F7634300270237 /* main.m in Sources */,
+				FE35E1FC20FC5207007C0FE0 /* BDTextField.m in Sources */,
 				FEE3372C20F842F600597B42 /* BDNewGuideVC.m in Sources */,
 				FEE3372520F842F600597B42 /* UILabel+extension.m in Sources */,
 				FEE3372F20F842F600597B42 /* BDAccountManager.m in Sources */,
@@ -559,6 +576,7 @@
 				FEE3372820F842F600597B42 /* UIView+Utils.m in Sources */,
 				FEE3372B20F842F600597B42 /* BDBaseWebViewController.m in Sources */,
 				FEE3372E20F842F600597B42 /* BDTableVC.m in Sources */,
+				FE35E20220FC564D007C0FE0 /* BDAlertControllerManager.m in Sources */,
 				FEE3373920F842F600597B42 /* BDUserHead.m in Sources */,
 				FEE3373020F842F600597B42 /* HttpManager.m in Sources */,
 				FEE3372320F842F600597B42 /* UIImage+Color.m in Sources */,
