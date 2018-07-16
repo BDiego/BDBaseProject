@@ -92,9 +92,16 @@ void pushWithVCClassName (NSString *className,NSDictionary *properties) {
 
 void presentViewController (UIViewController *vc,BOOL animated) {
     if (!vc) return;
-    [topMostViewController().navigationController presentViewController:vc animated:animated completion:^{
-        
-    }];
+    if (topMostViewController().navigationController) {
+        [topMostViewController().navigationController presentViewController:vc animated:animated completion:^{
+            
+        }];
+    }else{
+        [topMostViewController() presentViewController:vc animated:animated completion:^{
+            
+        }];
+    }
+    
 }
 
 
