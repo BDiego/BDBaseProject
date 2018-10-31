@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 def testing_pods
     pod 'MJExtension'
@@ -9,9 +9,8 @@ def testing_pods
     pod 'IQKeyboardManager'
     pod 'SDWebImage'
     pod 'RTRootNavigationController'
-    pod 'JKCountDownButton'
-    pod 'HYBHelperKit'
     pod 'YYCache'
+    pod 'HYBHelperKit'
 end
 
 target 'BDBaseProject' do

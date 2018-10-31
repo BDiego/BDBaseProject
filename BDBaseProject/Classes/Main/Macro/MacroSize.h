@@ -10,7 +10,9 @@
 #define MacroSize_h
 
 #define kStatusBarHeight            [[UIApplication sharedApplication] statusBarFrame].size.height
-#define kNaviBarHeight              (iPhoneX ? 88 : 64)
+#define kNaviBarHeight              (iPhoneXStyle ? 88 : 64)
+#define kTabBarHeight               (iPhoneXStyle ? 83 : 49)
+
 #define kLineHeight                 (1.f/[[UIScreen mainScreen] scale])
 
 #define kScreenWidth                ([[UIScreen mainScreen] bounds].size.width)
@@ -26,9 +28,13 @@
 #define iPhone5                                 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhone6                                 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhone6Plus                             ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
-#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
-#define iPhoneRatio                 roundf((kScreenWidth/375.f) * 100) / 100 //保留两位小数, 设计图750x1334(接近Iphone6尺寸)
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhoneXR ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhoneXS_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhoneXStyle ([UIScreen mainScreen].bounds.size.height == 812.f || [UIScreen mainScreen].bounds.size.height == 896.f)
+
 
 
 #endif /* MacroSize_h */
